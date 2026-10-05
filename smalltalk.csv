@@ -1,0 +1,229 @@
+flags,utterance,category,intent
+B,hi,SMALL_TALK,greeting
+B,hello,SMALL_TALK,greeting
+B,hey,SMALL_TALK,greeting
+B,hiya,SMALL_TALK,greeting
+B,hi there,SMALL_TALK,greeting
+B,hello there,SMALL_TALK,greeting
+B,hey there,SMALL_TALK,greeting
+B,good morning,SMALL_TALK,greeting
+B,good afternoon,SMALL_TALK,greeting
+B,good evening,SMALL_TALK,greeting
+B,morning,SMALL_TALK,greeting
+B,evening,SMALL_TALK,greeting
+B,hi bot,SMALL_TALK,greeting
+B,hello bot,SMALL_TALK,greeting
+B,hey bot,SMALL_TALK,greeting
+B,hi team,SMALL_TALK,greeting
+B,hello team,SMALL_TALK,greeting
+B,hey team,SMALL_TALK,greeting
+B,hello anyone there,SMALL_TALK,greeting
+B,is anyone there,SMALL_TALK,greeting
+B,anybody there,SMALL_TALK,greeting
+B,hi how are you,SMALL_TALK,greeting
+B,hello how are you,SMALL_TALK,greeting
+B,hey how are you,SMALL_TALK,greeting
+B,how are you,SMALL_TALK,greeting
+B,how are you doing,SMALL_TALK,greeting
+B,how is it going,SMALL_TALK,greeting
+B,hows it going,SMALL_TALK,greeting
+B,whats up,SMALL_TALK,greeting
+B,sup,SMALL_TALK,greeting
+B,yo,SMALL_TALK,greeting
+B,greetings,SMALL_TALK,greeting
+B,hello again,SMALL_TALK,greeting
+B,hi again,SMALL_TALK,greeting
+B,hey again,SMALL_TALK,greeting
+B,good day,SMALL_TALK,greeting
+B,hi good morning,SMALL_TALK,greeting
+B,hello good afternoon,SMALL_TALK,greeting
+B,hey good evening,SMALL_TALK,greeting
+B,helo,SMALL_TALK,greeting
+B,hii,SMALL_TALK,greeting
+B,hiii,SMALL_TALK,greeting
+B,heyy,SMALL_TALK,greeting
+B,heyyy,SMALL_TALK,greeting
+B,hellooo,SMALL_TALK,greeting
+B,hallo,SMALL_TALK,greeting
+B,hai,SMALL_TALK,greeting
+B,hey hey,SMALL_TALK,greeting
+B,hi hi,SMALL_TALK,greeting
+B,hello hello,SMALL_TALK,greeting
+B,hi friend,SMALL_TALK,greeting
+B,hello friend,SMALL_TALK,greeting
+B,hey you,SMALL_TALK,greeting
+B,nice to meet you,SMALL_TALK,greeting
+B,pleased to meet you,SMALL_TALK,greeting
+B,hi nice to meet you,SMALL_TALK,greeting
+B,hello is this support,SMALL_TALK,greeting
+B,hi is this the help desk,SMALL_TALK,greeting
+B,hey can you hear me,SMALL_TALK,greeting
+B,hello are you there,SMALL_TALK,greeting
+B,hi are you a bot,SMALL_TALK,greeting
+B,hello are you a real person,SMALL_TALK,greeting
+B,morning team,SMALL_TALK,greeting
+B,good morning to you,SMALL_TALK,greeting
+B,top of the morning,SMALL_TALK,greeting
+B,howdy,SMALL_TALK,greeting
+B,salam,SMALL_TALK,greeting
+B,assalam o alaikum,SMALL_TALK,greeting
+B,namaste,SMALL_TALK,greeting
+B,hola,SMALL_TALK,greeting
+B,bonjour,SMALL_TALK,greeting
+B,thanks,SMALL_TALK,thanks
+B,thank you,SMALL_TALK,thanks
+B,thank you so much,SMALL_TALK,thanks
+B,thanks a lot,SMALL_TALK,thanks
+B,thanks so much,SMALL_TALK,thanks
+B,thank you very much,SMALL_TALK,thanks
+B,many thanks,SMALL_TALK,thanks
+B,thanks a million,SMALL_TALK,thanks
+B,thx,SMALL_TALK,thanks
+B,thnx,SMALL_TALK,thanks
+B,thanx,SMALL_TALK,thanks
+B,ty,SMALL_TALK,thanks
+B,tysm,SMALL_TALK,thanks
+B,thanku,SMALL_TALK,thanks
+B,thank u,SMALL_TALK,thanks
+B,thankyou,SMALL_TALK,thanks
+B,thank yu,SMALL_TALK,thanks
+B,tnx,SMALL_TALK,thanks
+B,thks,SMALL_TALK,thanks
+B,cheers,SMALL_TALK,thanks
+B,cheers mate,SMALL_TALK,thanks
+B,ta,SMALL_TALK,thanks
+B,much appreciated,SMALL_TALK,thanks
+B,i appreciate it,SMALL_TALK,thanks
+B,appreciate it,SMALL_TALK,thanks
+B,appreciate your help,SMALL_TALK,thanks
+B,i appreciate your help,SMALL_TALK,thanks
+B,thanks for your help,SMALL_TALK,thanks
+B,thank you for your help,SMALL_TALK,thanks
+B,thanks for helping,SMALL_TALK,thanks
+B,thank you for helping me,SMALL_TALK,thanks
+B,thanks for the help,SMALL_TALK,thanks
+B,thanks for the info,SMALL_TALK,thanks
+B,thank you for the information,SMALL_TALK,thanks
+B,thanks for the update,SMALL_TALK,thanks
+B,thank you for the update,SMALL_TALK,thanks
+B,thanks for sorting that,SMALL_TALK,thanks
+B,thanks for sorting it out,SMALL_TALK,thanks
+B,thank you for sorting this out,SMALL_TALK,thanks
+B,thanks that helps,SMALL_TALK,thanks
+B,thank you that helped,SMALL_TALK,thanks
+B,that helped thanks,SMALL_TALK,thanks
+B,that is helpful thank you,SMALL_TALK,thanks
+B,great thanks,SMALL_TALK,thanks
+B,great thank you,SMALL_TALK,thanks
+B,perfect thanks,SMALL_TALK,thanks
+B,perfect thank you,SMALL_TALK,thanks
+B,brilliant thanks,SMALL_TALK,thanks
+B,awesome thanks,SMALL_TALK,thanks
+B,nice thanks,SMALL_TALK,thanks
+B,ok thanks,SMALL_TALK,thanks
+B,okay thank you,SMALL_TALK,thanks
+B,ok thank you,SMALL_TALK,thanks
+B,alright thanks,SMALL_TALK,thanks
+B,cool thanks,SMALL_TALK,thanks
+B,got it thanks,SMALL_TALK,thanks
+B,got it thank you,SMALL_TALK,thanks
+B,understood thanks,SMALL_TALK,thanks
+B,lovely thanks,SMALL_TALK,thanks
+B,super thanks,SMALL_TALK,thanks
+B,wonderful thank you,SMALL_TALK,thanks
+B,excellent thanks,SMALL_TALK,thanks
+B,thanks mate,SMALL_TALK,thanks
+B,thanks buddy,SMALL_TALK,thanks
+B,thank you kindly,SMALL_TALK,thanks
+B,thanks again,SMALL_TALK,thanks
+B,thank you again,SMALL_TALK,thanks
+B,thanks a bunch,SMALL_TALK,thanks
+B,big thanks,SMALL_TALK,thanks
+B,you are a star,SMALL_TALK,thanks
+B,you have been very helpful,SMALL_TALK,thanks
+B,you were very helpful,SMALL_TALK,thanks
+B,very helpful thanks,SMALL_TALK,thanks
+B,you are the best,SMALL_TALK,thanks
+B,you are amazing thanks,SMALL_TALK,thanks
+B,thanks you,SMALL_TALK,thanks
+B,tks,SMALL_TALK,thanks
+B,thanks loads,SMALL_TALK,thanks
+B,shukriya,SMALL_TALK,thanks
+B,jazakallah,SMALL_TALK,thanks
+B,gracias,SMALL_TALK,thanks
+B,merci,SMALL_TALK,thanks
+B,danke,SMALL_TALK,thanks
+B,bye,SMALL_TALK,goodbye
+B,goodbye,SMALL_TALK,goodbye
+B,good bye,SMALL_TALK,goodbye
+B,bye bye,SMALL_TALK,goodbye
+B,byebye,SMALL_TALK,goodbye
+B,bye now,SMALL_TALK,goodbye
+B,see you,SMALL_TALK,goodbye
+B,see ya,SMALL_TALK,goodbye
+B,see you later,SMALL_TALK,goodbye
+B,see you soon,SMALL_TALK,goodbye
+B,later,SMALL_TALK,goodbye
+B,catch you later,SMALL_TALK,goodbye
+B,talk later,SMALL_TALK,goodbye
+B,talk to you later,SMALL_TALK,goodbye
+B,ttyl,SMALL_TALK,goodbye
+B,take care,SMALL_TALK,goodbye
+B,have a nice day,SMALL_TALK,goodbye
+B,have a good day,SMALL_TALK,goodbye
+B,have a great day,SMALL_TALK,goodbye
+B,have a good one,SMALL_TALK,goodbye
+B,have a nice evening,SMALL_TALK,goodbye
+B,good night,SMALL_TALK,goodbye
+B,goodnight,SMALL_TALK,goodbye
+B,night,SMALL_TALK,goodbye
+B,that is all,SMALL_TALK,goodbye
+B,thats all,SMALL_TALK,goodbye
+B,that is all for now,SMALL_TALK,goodbye
+B,thats all for today,SMALL_TALK,goodbye
+B,that will be all,SMALL_TALK,goodbye
+B,nothing else,SMALL_TALK,goodbye
+B,nothing else thanks,SMALL_TALK,goodbye
+B,no that is all,SMALL_TALK,goodbye
+B,no thats it,SMALL_TALK,goodbye
+B,that is it,SMALL_TALK,goodbye
+B,thats it,SMALL_TALK,goodbye
+B,i am done,SMALL_TALK,goodbye
+B,im done,SMALL_TALK,goodbye
+B,all done,SMALL_TALK,goodbye
+B,all good bye,SMALL_TALK,goodbye
+B,i am good now bye,SMALL_TALK,goodbye
+B,i have to go,SMALL_TALK,goodbye
+B,i need to go,SMALL_TALK,goodbye
+B,gotta go,SMALL_TALK,goodbye
+B,got to go,SMALL_TALK,goodbye
+B,i will go now,SMALL_TALK,goodbye
+B,leaving now,SMALL_TALK,goodbye
+B,signing off,SMALL_TALK,goodbye
+B,over and out,SMALL_TALK,goodbye
+B,end chat,SMALL_TALK,goodbye
+B,close chat,SMALL_TALK,goodbye
+B,end the chat,SMALL_TALK,goodbye
+B,finish chat,SMALL_TALK,goodbye
+B,cya,SMALL_TALK,goodbye
+B,cu,SMALL_TALK,goodbye
+B,bye for now,SMALL_TALK,goodbye
+B,goodbye for now,SMALL_TALK,goodbye
+B,bye take care,SMALL_TALK,goodbye
+B,ok bye,SMALL_TALK,goodbye
+B,okay bye,SMALL_TALK,goodbye
+B,alright bye,SMALL_TALK,goodbye
+B,thanks bye,SMALL_TALK,goodbye
+B,thank you bye,SMALL_TALK,goodbye
+B,thanks goodbye,SMALL_TALK,goodbye
+B,thank you goodbye,SMALL_TALK,goodbye
+B,bye thanks,SMALL_TALK,goodbye
+B,cheers bye,SMALL_TALK,goodbye
+B,ciao,SMALL_TALK,goodbye
+B,adios,SMALL_TALK,goodbye
+B,farewell,SMALL_TALK,goodbye
+B,so long,SMALL_TALK,goodbye
+B,until next time,SMALL_TALK,goodbye
+B,speak soon,SMALL_TALK,goodbye
+B,khuda hafiz,SMALL_TALK,goodbye
+B,allah hafiz,SMALL_TALK,goodbye
