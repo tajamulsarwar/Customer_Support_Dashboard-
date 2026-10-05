@@ -10,6 +10,11 @@ The chatbot with a real database behind it.
 | `db.py` | **every** SQL query lives here, and nowhere else |
 | `seed.py` | builds the database and adds sample data |
 | `bot.py` | the brain: understand the message, then use the database |
+| `router.py` | decides who answers: the local model, the cache, or a language model |
+| `llm_ollama.py` | asks Ollama, a free language model on your own computer |
+| `llm.py` | asks Claude instead (paid, needs an API key) |
+| `tracing.py` | sends a log of each step to LangSmith, if it is turned on |
+| `database.py` | picks SQLite (`db.py`) or Supabase (`db_pg.py`) |
 | `cli.py` | the screen you type into |
 | `report.py` | read back what the database has collected |
 | `support.db` | the database file itself (created by `seed.py`) |
@@ -28,6 +33,54 @@ Extra options:
 python support/cli.py --debug                 # show the model's guesses
 python support/cli.py --as aisha@example.com  # chat as a known customer
 ```
+
+## Who answers each message
+
+```
+message
+   │
+   ▼
+1. local model   - at least 70% sure AND knows every word?  -> answer (0.01s, free)
+2. cache         - seen this exact message before?          -> saved answer (free)
+3. Ollama        - understands new words and typos          -> answer (10-30s, free)
+4. nothing worked                                           -> best guess, or "I did not understand"
+```
+
+Choose the language model in `.env`:
+
+```
+LLM_BACKEND=ollama        # ollama, claude, auto or none
+OLLAMA_MODEL=qwen2.5:7b   # qwen2.5:3b is faster, a little less accurate
+```
+
+Do not use a very small model like `gemma3:270m`. It cannot follow the long
+list of intents and gives confident wrong answers.
+
+The cache only reuses answers from the model you use now. Switching models
+does not leave the old model's answers behind.
+
+## LangSmith tracing
+
+LangSmith shows every message on a web page: what the customer typed, who
+answered, what Ollama was asked and said, how long it took, and the tokens used.
+
+Turn it on in `.env`:
+
+```
+LANGSMITH_TRACING=true
+LANGSMITH_API_KEY=lsv2_...         # smith.langchain.com -> Settings -> API Keys
+LANGSMITH_PROJECT=customer-support
+```
+
+Then chat as normal and open **smith.langchain.com -> Tracing Projects ->
+customer-support**. Each message is one `router decide` row. Click it to see
+the steps inside (`ollama classify` -> `ollama`).
+
+Set `LANGSMITH_TRACING=false` to send nothing. If the `langsmith` package is
+not installed, the bot works the same, with no tracing.
+
+**Privacy:** while tracing is on, customer messages are sent to LangSmith's
+servers, even when Ollama runs on your own computer.
 
 ## The five tables
 
@@ -92,9 +145,11 @@ uses fewer than 2,000 words. Your customers use words like *parcel*, *receipt*
 and *login* that appear in it zero times. Fifty real sentences collected this
 way beat thousands of generated ones.
 
-## Still broken
+## What used to be broken
 
-`"what about my parcel"` returns an **invoice**, at 70% confidence. Confidently
-wrong, which is worse than saying "I don't know". Same cause: "parcel" is not a
-word the model has ever seen. The database fixed the *doing*. It did not fix
-the *understanding*.
+`"what about my parcel"` returned an **invoice**, at 70% confidence. Confidently
+wrong, because "parcel" is not a word the local model has ever seen.
+
+The router fixes this. Any unknown word sends the message to Ollama, which
+understands it. The loop above is still worth doing: every sentence you add to
+the training data is one the local model can answer instantly next time.

@@ -10,6 +10,7 @@
 | `train.py` | trains the intent model, saves `model.joblib` |
 | `chat.py` | talk to the bot |
 | `responses.py` | **the bot's answers — edit this file to make it yours** |
+| `smalltalk.csv` | our own examples for hello, thank you and bye (Bitext has none) |
 | `realtest.py` | honest test on hand-written sentences |
 | `check.py` | **is the data clean?** — 10 quality checks |
 | `why.py` | shows exactly which words the data never learned |
@@ -28,6 +29,10 @@ python realtest.py                # see the honest score
 ## What the data is
 
 27 intents in 11 categories. Every row is one customer sentence plus a label.
+
+We add 3 more from `smalltalk.csv`: `greeting`, `thanks` and `goodbye`. So the
+model knows 30 intents. Without them, "thank you" got "I did not understand".
+To teach it more phrases, add lines to `smalltalk.csv` and run `train.py` again.
 
 **There are no support-agent replies in the dataset.** It teaches the bot to
 understand the question only. The answers in `responses.py` are written by hand.
@@ -65,3 +70,9 @@ the moment a customer uses a normal English word the data never contained.
   "I don't know" more often instead of giving a wrong answer.
 - Add your own real customer sentences to the training data. Even 20 real
   examples per intent will help more than 20,000 generated ones.
+
+## The full bot
+
+The files above are the simple version. The real bot, with a database, a
+language model for hard messages and LangSmith tracing, is in `support/`.
+See `support/README.md`.
